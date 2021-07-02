@@ -929,11 +929,17 @@ namespace plotLED_blocks {
 
     //% color="#cd853f" weight=80 blockId=neopixel_reinbow block="にじ色にする" group="ﾌﾟﾛｯﾄｶｰLED"
     export function neopixel_rainbow() {
-        io_neo = neopixel.create(DigitalPin.P9, 4, NeoPixelMode.RGB)
-
+        let io_neo2 = neopixel.create(DigitalPin.P9, 24, NeoPixelMode.RGB)
+        io_neo2.showRainbow(1, 360)
     }
 
-
+    //% color="#cd853f" weight=80 blockId=neopixel_erace block="ﾌﾙｶﾗｰLEDを全部消す" group="ﾌﾟﾛｯﾄｶｰLED"
+    export function neopixel_erace_block() {
+        for (let n=0 ; n < 4 ; n++){
+        io_neo.setPixelColor(n, neopixel.colors(NeoPixelColors.Black))            
+        } 
+        io_neo.show()
+    }
 
   //% color="#1E90FF" weight=83 block="待ち時間（秒）|%second|" group="ﾌﾟﾛｯﾄｶｰLED"
   //% second.min=0 second.max=10
