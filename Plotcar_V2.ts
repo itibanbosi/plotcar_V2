@@ -914,7 +914,7 @@ namespace plotLED_blocks {
         break;
         case neoLED_color.白 :
         for (let n=0 ; n < neo_number;n++){
-        io_neo.setPixelColor(n, neopixel.colors(NeoPixelColors.White))            
+        io_neo.setPixelColor(n,neopixel.colors(NeoPixelColors.White))           
         } 
         io_neo.show()
         break;                
