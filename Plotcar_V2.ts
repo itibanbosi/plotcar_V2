@@ -191,6 +191,24 @@ let Stepping_L = [
   ];
 
 
+led.enable(false)
+pins.digitalWritePin(DigitalPin.P3, 0)
+pins.digitalWritePin(DigitalPin.P4, 0)
+pins.digitalWritePin(DigitalPin.P6, 0)
+pins.digitalWritePin(DigitalPin.P7, 0)
+pins.digitalWritePin(DigitalPin.P13, 0)
+pins.digitalWritePin(DigitalPin.P14, 0)
+pins.digitalWritePin(DigitalPin.P15, 0)
+pins.digitalWritePin(DigitalPin.P16, 0)
+
+
+
+
+
+
+
+
+
 
 let moter_number=0;
 let io_neo = neopixel.create(DigitalPin.P9, 4, NeoPixelMode.RGB);
