@@ -927,7 +927,7 @@ namespace plotLED_blocks {
     }
   }
 
-    //% color="#cd853f" weight=80 blockId=neopixel_reinbow block="にじ色にする" group="ﾌﾟﾛｯﾄｶｰLED"
+    //% color="#ff4500" weight=80 blockId=neopixel_reinbow block="にじ色にする" group="ﾌﾟﾛｯﾄｶｰLED"
     export function neopixel_rainbow() {
         let io_neo2 = neopixel.create(DigitalPin.P9, 24, NeoPixelMode.RGB)
         io_neo2.showRainbow(1, 360)
